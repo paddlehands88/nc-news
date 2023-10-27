@@ -1,8 +1,137 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* ****************** ARTICLE LIST STYLING *******************/ 
+
+.ArticleList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgb(240, 240, 240);
+}
+
+.ArticleListUnorderedList {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* width: 340px; */
+}
+
+.ArticleCard {
+  width: 320px;
+  margin: 30px;
+  background-color: white;
+}
+
+.ArticleCardImg {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.ArticleCardHeadline {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 0;
+
+}
+
+.ArticleCardAuthor {
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  
+}
+
+/* ************* SINGLE ARTICLE VIEW STYLING ***************** */
+
+.ViewArticleContainer {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-basis: auto;
+  object-fit: contain;
+}
+
+.ViewArticleHeadline {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ViewArticleImage {
+  object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .ViewArticleContainer {
+    flex: 100%;
+  }
+}
+
+/*************** COMMENT CARD *************/
+
+.CommentListUnorderedList {
+  padding-left: 0;
+}
+
+.CommentCardContainer {
+  background-color: rgb(240, 240, 240);
+}
+
+.CommentCardAuthor {
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0;
+}
+
+.CommentCardVotesContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.CommentCardBody {
+  background-color: white;
+  margin: 16px;
+  padding: 10px;
+  border-width: 1px;
+  border-color: rgb(205, 205, 205);
+  border-style: solid;
+}
+
+.CommentCardVotesText {
+  padding: 5px;
+  margin: 10px;
+}
+
+
+
+
+
+
+/* *************PRE DONE CSS************** */
+
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .logo {

@@ -1,4 +1,5 @@
-// Import Link from react-router-dom for use with link on article card
+import PersonIcon from '@mui/icons-material/Person';
+
 
 function ArticleCard(article) {
 
@@ -7,10 +8,11 @@ function ArticleCard(article) {
     const { title, image, author } = article;
 
     return (
-      <div>
-          <h3>{title}</h3>
-          <img src={image} alt={"article image"} />
-          <h4>{author}</h4>
+      <div className="ArticleCard">
+          <img src={image} alt={"article image"} className="ArticleCardImg" />
+          <h3 className="ArticleCardHeadline">{title}</h3>
+          <br />
+          <h4 className="ArticleCardAuthor"><PersonIcon />    {author}</h4>
       </div>
     )
   }

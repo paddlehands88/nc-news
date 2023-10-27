@@ -30,11 +30,9 @@ function ListArticles() {
           }, [])
           
   return isLoading ? <p>LOADING...</p> : (
-    <div>
-        <h3>ListArticles Component Placeholder</h3>
-        <ul>
+    <div className="ArticleList">
+        <ul className="ArticleListUnorderedList">
             {articleList.map((article) => {
-                console.log(article.article_id);
                 return (
                 <div key={article.article_id}>
                 <Link to={`/articles/${article.article_id}`}>
